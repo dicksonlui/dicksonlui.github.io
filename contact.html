@@ -18,6 +18,7 @@
 
     <!-- Add custom CSS here -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/contact.css" rel="stylesheet">
 
 </head>
 
@@ -92,74 +93,107 @@
     </div>
     <!-- /.intro-header -->
 
-    <div class="content-section-a">
-
+    <!-- Begin Contact Header -->
+    <div class="jumbotron jumbotron-sm">
         <div class="container">
-
             <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Why choose us?
-                        <br>We make beautiful apps.</h2>
-                    <p class="lead">Just check out our portfolio. DreamLab is composed of talented developers from top notch universities in the United States. You can't go wrong with us.</p>
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/ipod.jpg" alt="">
+                <div class="col-sm-12 col-lg-12">
+                    <h1 class="h1">
+                        Contact us <small>and we can begin our dream.</small></h1>
                 </div>
             </div>
-
         </div>
-        <!-- /.container -->
-
     </div>
-    <!-- /.content-section-a -->
+    <!-- End Contact Header -->
 
-    <div class="content-section-b">
+    <div class="container">
+    <p class="lead">Feel free to drop us a line with the application idea of your wildest dreams. Our engineers will contact you for more information on your project, and we can begin our process as soon as we work out the details.</p>
+    </div>
 
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">3D Device Mockups
-                        <br>by PSDCovers</h2>
-                    <p class="lead">Turn your 2D designs into high quality, 3D product shots in seconds using free Photoshop actions by PSDCovers! <a target="_blank" href="http://www.psdcovers.com/">Visit their website</a> to download some of their awesome, free photoshop actions!</p>
-                </div>
-                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="img/doge.png" alt="">
+    <!-- Begin Contact Form -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="well well-sm">
+                    <form>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name">
+                                    Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="First and Last Name" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">
+                                    Email Address</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                    </span>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">
+                                    Phone Number</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-phone"></span>
+                                    </span>
+                                    <input type="phone" class="form-control" id="phone" placeholder="XXX-XXX-XXXX" required="required" /></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">
+                                    Subject</label>
+                                <select id="subject" name="subject" class="form-control" required="required">
+                                    <option value="na" selected="">Choose One:</option>
+                                    <option value="web">Web Development</option>
+                                    <option value="mobile">Mobile Development</option>
+                                    <option value="commerce">eCommerce/mCommerce</option>
+                                    <option value="strategy">SEO Strategy</option>
+                                    <option value="advising">Advisory Services</option>
+                                    <option value="other">Other Inquiry</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name">
+                                    Information</label>
+                                <textarea name="message" id="message" class="form-control" rows="12" cols="25" required="required"
+                                    placeholder="Send us a brief description of who you are and what your application is. We'd love to get to know you and further discuss your ideas!"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                                Send</button>
+                        </div>
+                    </div>
+                    </form>
                 </div>
             </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-b -->
-
-    <div class="content-section-a">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Google Web Fonts and
-                        <br>Font Awesome Icons</h2>
-                    <p class="lead">This template features the 'Lato' font, part of the <a target="_blank" href="http://www.google.com/fonts">Google Web Font library</a>, as well as <a target="_blank" href="http://fontawesome.io">icons from Font Awesome</a>.</p>
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/phones.png" alt="">
-                </div>
+            <div class="col-md-4">
+                <form>
+                <legend><span class="glyphicon glyphicon-globe"></span> Our office</legend>
+                <p>DreamLab has members in both San Francisco and Los Angeles ready to meet with you and discuss your needs.</p>
+                <address>
+                    <strong>DreamLab, Inc.</strong><br>
+                    1337 Lab Lab Lane<br>
+                    San Francisco, CA 94122<br>
+                    <abbr title="Phone">
+                        P:</abbr>
+                    (123) 456-7890
+                </address>
+                <address>
+                    <strong>Full Name</strong><br>
+                    <a href="mailto:#">first.last@example.com</a>
+                </address>
+                </form>
             </div>
-
         </div>
-        <!-- /.container -->
 
+        <!-- Formatting element. -->
+        <br><hr><br>
     </div>
-    <!-- /.content-section-a -->
+    <!-- End Contact Form -->
+   
 
     <div class="banner">
 
@@ -192,16 +226,19 @@
             <div class="row">
                 <div class="col-lg-12">
                     <ul class="list-inline">
-                        <li><a href="#home">Home</a>
+                        <li><a href="./index.html">About Us</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
-                        <li><a href="#about">About</a>
+                        <li><a href="./services.html">Services</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
-                        <li><a href="#services">Services</a>
+                         <li><a href="./process.html">Our Process</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
-                        <li><a href="#contact">Contact</a>
+                        <li><a href="./portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li><a href="./contact.html">Contact Us</a>
                         </li>
                     </ul>
                     <p class="copyright text-muted small">Copyright &copy; DreamLab 2014. All Rights Reserved</p>
