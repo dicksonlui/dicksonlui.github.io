@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>DreamLab</title>
+    <title>CodePort</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -19,6 +19,9 @@
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
 
+    <!-- Custom JS -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="./js/chart.js"></script>
 </head>
 
 <!-- Body Begins -->
@@ -40,15 +43,15 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="./index.html">About Us</a>
+                    <li><a href="./index.html"><i class="fa fa-question-circle fa-fw"></i> About Us</a>
                     </li>
-                    <li><a href="./services.html">Services</a>
+                    <li><a href="./services.html"><i class="fa fa-cogs fa-fw"></i> Services</a>
                     </li>
-                    <li><a href="./process.html">Our Process</a>
+                    <li><a href="./process.html"><i class="fa fa-tachometer fa-fw"></i> Our Process</a>
                     </li>
-                    <li><a href="./portfolio.html">Portfolio</a>
+                    <li><a href="./portfolio.html"><i class="fa fa-tasks fa-fw"></i> Portfolio</a>
                     </li>
-                    <li><a href="./contact.html">Contact Us</a>
+                    <li><a href="./contact.html"><i class="fa fa-envelope fa-fw"></i> Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -66,8 +69,8 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-message">
-                        <h1>DreamLab</h1>
-                        <h3>Where your app dreams come to life</h3>
+                        <h1>CodePort</h1>
+                        <h3>Let us help your app fly.</h3>
 
                         <!-- This is a white horizontal divider that separates our two sections. -->
                         <hr class="intro-divider">
@@ -103,7 +106,7 @@
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Why choose us?
                         <br>We make beautiful apps.</h2>
-                    <p class="lead">Just check out our portfolio. DreamLab is composed of talented engineers from top notch universities in the United States. You can't go wrong with us.</p>
+                    <p class="lead">CodePort is composed of a small team of talented engineers hand-picked from only the top ranked programs in the United States. You can't go wrong with our group.</p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                     <img class="img-responsive" src="img/ipod.jpg" alt="">
@@ -116,6 +119,90 @@
     </div>
     <!-- /.content-section-a -->
 
+    <center>
+    <div id="skills">
+        <div class="container">
+            <div class="row centered">
+                <h3>OUR SKILLS</h3>
+                <br>
+                <div class="col-lg-3 mt">
+                    <canvas id="javascript" height="130" width="130"></canvas>
+                    <p>Javascript</p>
+                    <br>
+                    <script>
+                        var doughnutData = [
+                                {
+                                    value: 70,
+                                    color:"#3c96dd"
+                                },
+                                {
+                                    value : 30,
+                                    color : "#3c3c3c"
+                                }
+                            ];
+                            var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
+                    </script>
+                </div>
+                <div class="col-lg-3 mt">
+                    <canvas id="bootstrap" height="130" width="130"></canvas>
+                    <p>Bootstrap</p>
+                    <br>
+                    <script>
+                        var doughnutData = [
+                                {
+                                    value: 90,
+                                    color:"#3c96dd"
+                                },
+                                {
+                                    value : 10,
+                                    color : "#3c3c3c"
+                                }
+                            ];
+                            var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
+                    </script>
+                </div>
+                <div class="col-lg-3 mt">
+                    <canvas id="wordpress" height="130" width="130"></canvas>
+                    <p>Wordpress</p>
+                    <br>
+                    <script>
+                        var doughnutData = [
+                                {
+                                    value: 65,
+                                    color:"#3c96dd"
+                                },
+                                {
+                                    value : 35,
+                                    color : "#3c3c3c"
+                                }
+                            ];
+                            var myDoughnut = new Chart(document.getElementById("wordpress").getContext("2d")).Doughnut(doughnutData);
+                    </script>
+                </div>
+                <div class="col-lg-3 mt">
+                    <canvas id="photoshop" height="130" width="130"></canvas>
+                    <p>Photoshop</p>
+                    <br>
+                    <script>
+                        var doughnutData = [
+                                {
+                                    value: 50,
+                                    color:"#3c96dd"
+                                },
+                                {
+                                    value : 50,
+                                    color : "#3c3c3c"
+                                }
+                            ];
+                            var myDoughnut = new Chart(document.getElementById("photoshop").getContext("2d")).Doughnut(doughnutData);
+                    </script>
+                </div>
+            </div><!-- /row -->
+        </div><!-- /container -->
+        <br><br>
+    </div><!-- /skills -->
+    </center>
+
     <div class="content-section-b">
 
         <div class="container">
@@ -126,7 +213,7 @@
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Need consulting?
                         <br>No problem.</h2>
-                    <p class="lead">From small businesses to big businesses, we have you covered. DreamLab offers lead generation advertising services and industry advisory from our professional consultants.</p>
+                    <p class="lead">CodePort has both small and big businesses covered. We offer lead generation advising and expert industry advisory to ensure an explosive take-off for your ideas.</p>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
                     <img class="img-responsive" src="img/doge.png" alt="">

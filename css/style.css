@@ -335,3 +335,9 @@ p.copyright {
             right: auto;
         }
 }
+
+#skills {
+    background-color: #e5e5e5;
+    padding-top: 50px;
+    margin-bottom: 0px;
+}
