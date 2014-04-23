@@ -73,18 +73,19 @@
 				</div><!-- /col-12 -->
 			</div><!-- /row -->
 			<div id="home-row-2" class="row clearfix">
-				<div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="4"><img src="images/s02.png"></div><span>PROFESSIONAL</span></div>
-				<div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="3"><img src="images/s01.png"></div><span>FRIENDLY</span></div>
-				<div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="5"><img src="images/s03.png"></div><span>SCALABLE</span></div>
+				<div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="4"><img src="images/trans.png" height="100px" width="100px"></div><span>(something)</span></div>
+				<div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="6"><img src="images/trans.png" height="100px" width="100px"></div><span>(book us)</span></div>
+				<div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="5"><img src="images/trans.png" height="100px" width="100px"></div><span>(something)</span></div>
 			</div>
 		</div>
 	</div>
 	<!-- end hero slide -->
 	
-	<!-- === Slide 2 === -->
+	<!-- begin services slide -->
 	<div class="slide story" id="slide-2" data-slide="2">
 		<div class="container">
-
+			
+			<!-- headers -->
 			<div class="row title-row">
 				<div class="col-12 font-thin">From implementing the latest technologies to providing cutting-edge business strategies, <span class="font-semibold">we</span> can do it all.</div>
 			</div>
@@ -96,7 +97,8 @@
 			<div class="row subtitle-row">
 				<div class="col-12 font-thin">What <span class="font-semibold">we</span> do.</div>
 			</div>
-
+			
+			<!-- begin services section -->
 			<div class="row content-row">
 				<div class="col-12 col-lg-3 col-sm-6">
 					<p><i class="icon icon-eye-open"></i></p>
@@ -119,9 +121,11 @@
 					<h4 class="font-thin">If you have an awesome product to sell, our branding experts and e-commerce development team will make sure it looks amazing to the masses.</h4>
 				</div>
 			</div>
+			<!-- end services section -->
 
 			<br><br><br>
 
+			<!-- begin skills section -->
 			<div class="container">
                 <div class="row centered">
                     <br>
@@ -130,17 +134,8 @@
                         <p>Ruby/PHP</p>
                         <br>
                         <script>
-                            var doughnutData = [
-                                    {
-                                        value: 80,
-                                        color:"#e4e6e5"
-                                    },
-                                    {
-                                        value : 20,
-                                        color : "#6E6E6E"
-                                    }
-                                ];
-                                var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
+                        	var doughnutData = [{value: 75, color: "#e4e6e5"},{value: 25, color: "#6E6E6E"}];
+                            var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
                         </script>
                     </div>
                     <div class="col-lg-3 mt">
@@ -148,17 +143,8 @@
                         <p>HTML/CSS</p>
                         <br>
                         <script>
-                            var doughnutData = [
-                                    {
-                                        value: 90,
-                                        color:"#e4e6e5"
-                                    },
-                                    {
-                                        value : 10,
-                                        color : "#6E6E6E"
-                                    }
-                                ];
-                                var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
+                        	var doughnutData = [{value: 75, color: "#e4e6e5"},{value: 25, color: "#6E6E6E"}];
+                            var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
                         </script>
                     </div>
                     <div class="col-lg-3 mt">
@@ -166,17 +152,8 @@
                         <p>WordPress</p>
                         <br>
                         <script>
-                            var doughnutData = [
-                                    {
-                                        value: 65,
-                                        color:"#e4e6e5"
-                                    },
-                                    {
-                                        value : 35,
-                                        color : "#6E6E6E"
-                                    }
-                                ];
-                                var myDoughnut = new Chart(document.getElementById("wordpress").getContext("2d")).Doughnut(doughnutData);
+                        	var doughnutData = [{value: 75, color: "#e4e6e5"},{value: 25, color: "#6E6E6E"}];
+                            var myDoughnut = new Chart(document.getElementById("wordpress").getContext("2d")).Doughnut(doughnutData);
                         </script>
                     </div>
                     <div class="col-lg-3 mt">
@@ -184,27 +161,22 @@
                         <p>Photoshop</p>
                         <br>
                         <script>
-                            var doughnutData = [
-                                    {
-                                        value: 75,
-                                        color:"#e4e6e5"
-                                    },
-                                    {
-                                        value : 25,
-                                        color : "#6E6E6E"
-                                    }
-                                ];
-                                var myDoughnut = new Chart(document.getElementById("photoshop").getContext("2d")).Doughnut(doughnutData);
+                        	var doughnutData = [{value: 75, color: "#e4e6e5"},{value: 25, color: "#6E6E6E"}];
+                            var myDoughnut = new Chart(document.getElementById("photoshop").getContext("2d")).Doughnut(doughnutData);
                         </script>
                     </div>
-                </div><!-- /row -->
+                </div>
                 <p>Our full-stack engineers are ready to take on any daunting task you have, regardless of what you need.</p>
-            </div><!-- /container -->
+            </div>
+
             <br><br>
-		</div><!-- /container -->
-	</div><!-- /slide2 -->
+		
+		</div>
+	</div>
+	<!-- end services slide -->
 	
-	<!-- === SLide 3 - Portfolio -->
+
+	<!-- begin fancybox portfolio -->
 	<div class="slide story" id="slide-3" data-slide="3">
 		<div class="row">
 			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p01-large.jpg"><img class="thumb" src="images/portfolio/p01-small.jpg" alt=""></a></div>
@@ -219,9 +191,10 @@
 			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p04-large.jpg"><img class="thumb" src="images/portfolio/p04-small.jpg" alt=""></a></div>
 			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p11-large.jpg"><img class="thumb" src="images/portfolio/p11-small.jpg" alt=""></a></div>
 			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p12-large.jpg"><img class="thumb" src="images/portfolio/p12-small.jpg" alt=""></a></div>
-		</div><!-- /row -->
-	</div><!-- /slide3 -->
-	
+		</div>
+	</div>
+	<!-- end fancybox portfolio -->
+
 	<!-- === Slide 4 - Process === -->
 	<div class="slide story" id="slide-4" data-slide="4">
 		<div class="container">
