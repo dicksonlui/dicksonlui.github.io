@@ -1,17 +1,5 @@
-
-.font-thin {
-	font-family: "Titillium Web", sans-serif;
-	font-weight: 200;
-}
-
-.font-semibold {
-	font-family: "Titillium Web", sans-serif;
-	font-weight: 600;
-}
-
-.font-light {
-	font-family: "Titillium Web", sans-serif;
-	font-weight: 300;
+* {
+	position: relative;
 }
 
 html, body {
@@ -27,8 +15,20 @@ body {
 	-webkit-font-smoothing: antialiased !important;
 }
 
-* {
-	position: relative;
+ 
+.font-thin {
+	font-family: "Titillium Web", sans-serif;
+	font-weight: 200;
+}
+
+.font-semibold {
+	font-family: "Titillium Web", sans-serif;
+	font-weight: 600;
+}
+
+.font-light {
+	font-family: "Titillium Web", sans-serif;
+	font-weight: 300;
 }
 
 .breaker {
@@ -171,7 +171,7 @@ body {
 			
 	.nav li[data-slide="1"],
 	.nav li[data-slide="6"] {
-		background-color: #ff9140;
+		background-color: #2f2f2f;
 	}
 	
 	.nav li[data-slide="2"] {
@@ -208,7 +208,7 @@ body {
 }
 
 #slide-1 {
-	background-image: url('../images/bg2.jpg');
+	background-image: url('../images/bg1.jpg');
 	color: #ffffff;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -220,7 +220,8 @@ body {
     -o-background-size: cover;
     background-size: cover;
     width: 100%;
-	text-align: center;
+	background-attachment: relative;
+	background-position: center center;
 }
 
 #slide-1 h1 {
@@ -293,7 +294,7 @@ body {
 }
 
 #slide-2 {
-	background-color: #3D94E8;
+	background-color: #1abc9c;
 	color: #e4e6e5;
 	padding-top: 90px;
 }
@@ -429,7 +430,7 @@ body {
 }
 
 #slide-4 {
-	background-color: #466AFF;
+	background-color: #34495e;
 	color: #e4e6e5;
 	padding-top: 90px;
 }
@@ -441,7 +442,7 @@ body {
 
 
 #slide-5 {
-	background-color: #4A34E8;
+	background-color: #f39c12;
 	color: #e4e6e5;
 	padding-top: 90px;
 }

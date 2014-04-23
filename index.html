@@ -1,230 +1,368 @@
 <!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<html class="">
 
-    <title>CodePort</title>
+<head lang="en">
+	<title>CodePort</title>
+	<!-- begin meta -->
+	<meta name="author" content="Dickson Lui">
+	<meta property="og:title" content="CodePort - We build scalable web and mobile applications">
+	<meta name="description" content="CodePort - We build scalable web and mobile applications">
+	<meta name="keywords" content="web development, web design, mobile development, mobile design, web apps, mobile apps, big data, seo services, e-commerce, advising, small business">	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<!-- end meta -->
 
-    <!-- Icon -->
-    <link rel="shortcut icon" href="./img/atom.ico">
+	<!-- begin stylesheets -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="fancybox/jquery.fancybox-v=2.1.5.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="./css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">	
+	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<!-- end stylesheets -->
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom Google Web Font -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-
-    <!-- Custom CSS -->
-    <link href="css/style.css" rel="stylesheet">
-
-    <!-- Custom JS -->
+	<!-- begin scripts -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="./js/chart.js"></script>
+	<!-- end scripts -->
+
+	<!-- prefetch images that are often used -->
+	<link rel="prefetch" href="images/zoom.png">
 </head>
 
-<!-- Body Begins -->
 <body>
+	<!-- begin navbar -->
+	<div class="navbar navbar-fixed-top" data-activeslide="1">
+		<div class="container">
+			<!-- responsive navbar toggle -->
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			<!-- begin navbar -->
+			<div class="nav-collapse collapse navbar-responsive-collapse">
+				<ul class="nav row">
+					<li data-slide="1" class="col-12 col-sm-2"><a id="menu-link-1" href="#slide-1" title="Next Section"><span class="icon icon-home"></span> <span class="text">HOME</span></a></li>
+					<li data-slide="2" class="col-12 col-sm-2"><a id="menu-link-2" href="#slide-2" title="Next Section"><span class="icon icon-cog icon-spin"></span> <span class="text">SERVICES</span></a></li>
+					<li data-slide="3" class="col-12 col-sm-2"><a id="menu-link-3" href="#slide-3" title="Next Section"><span class="icon icon-spinner icon-spin"></span> <span class="text">THE WORKS</span></a></li>
+					<li data-slide="4" class="col-12 col-sm-2"><a id="menu-link-4" href="#slide-4" title="Next Section"><span class="icon icon-dashboard"></span> <span class="text">OUR PROCESS</span></a></li>
+					<li data-slide="5" class="col-12 col-sm-2"><a id="menu-link-5" href="#slide-5" title="Next Section"><span class="icon icon-group"></span> <span class="text">ABOUT US</span></a></li>
+					<li data-slide="6" class="col-12 col-sm-2"><a id="menu-link-6" href="#slide-6" title="Next Section"><span class="icon icon-envelope"></span> <span class="text">BOOK US</span></a></li>
+				</ul>
+				<div class="row">
+					<div class="col-sm-2 active-menu"></div>
+				</div>
+			</div>
+			<!-- end navbar -->
+		</div>
+	</div>
+	<!-- end navbar -->
+	
+	<!-- begin hero slide -->
+	<div class="slide story" id="slide-1" data-slide="1">
+		<div class="container">
+			<div id="home-row-1" class="row clearfix">
+				<div class="col-12">
+					<h1 class="font-semibold">CodePort</span></h1>
+					<h4 class="font-thin">We build web and mobile applications to suit <span class="font-semibold">your</span> needs.</h4>
+					<br>
+					<br>
+				</div><!-- /col-12 -->
+			</div><!-- /row -->
+			<div id="home-row-2" class="row clearfix">
+				<div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="4"><img src="images/s02.png"></div><span>PROFESSIONAL</span></div>
+				<div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="3"><img src="images/s01.png"></div><span>FRIENDLY</span></div>
+				<div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="5"><img src="images/s03.png"></div><span>SCALABLE</span></div>
+			</div>
+		</div>
+	</div>
+	<!-- end hero slide -->
+	
+	<!-- === Slide 2 === -->
+	<div class="slide story" id="slide-2" data-slide="2">
+		<div class="container">
 
-    <!-- Navbar element -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="./index.html"><img alt="Logo" src="./img/logo.jpg"></a>
-            </div>
+			<div class="row title-row">
+				<div class="col-12 font-thin">From implementing the latest technologies to providing cutting-edge business strategies, <span class="font-semibold">we</span> can do it all.</div>
+			</div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="./index.html"><i class="fa fa-question-circle fa-fw"></i> About Us</a>
-                    </li>
-                    <li><a href="./services.html"><i class="fa fa-cogs fa-fw"></i> Services</a>
-                    </li>
-                    <li><a href="./process.html"><i class="fa fa-tachometer fa-fw"></i> Our Process</a>
-                    </li>
-                    <li><a href="./portfolio.html"><i class="fa fa-tasks fa-fw"></i> Portfolio</a>
-                    </li>
-                    <li><a href="./contact.html"><i class="fa fa-envelope fa-fw"></i> Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-    <!-- End Navbar -->
-    
-    <!-- Hero Element -->
-    <div class="intro-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-message">
+			<div class="row line-row">
+				<div class="hr">&nbsp;</div>
+			</div>
 
-                        <!-- Text -->
-                        <h1>CodePort</h1>
-                        <h3>Let us help your idea fly.</h3>
+			<div class="row subtitle-row">
+				<div class="col-12 font-thin">What <span class="font-semibold">we</span> do.</div>
+			</div>
 
-                        <!-- Divider -->
-                        <hr class="intro-divider">
+			<div class="row content-row">
+				<div class="col-12 col-lg-3 col-sm-6">
+					<p><i class="icon icon-eye-open"></i></p>
+					<h2 class="font-semibold">Advising</h2>
+					<h4 class="font-thin">Darion, all you.</h4>
+				</div>
+				<div class="col-12 col-lg-3 col-sm-6">
+					<p><i class="icon icon-laptop"></i></p>
+					<h2 class="font-thin">Web <span class="font-semibold">Design</span></h2>
+					<h4 class="font-thin">Our web design team works with the latest technologies and is focused twoards bringing you an aesthetically appealing, easy-to-use website.</h4>
+				</div>
+				<div class="col-12 col-lg-3 col-sm-6">
+					<p><i class="icon icon-tablet"></i></p>
+					<h2 class="font-thin">Mobile <span class="font-semibold">Apps</span></h2>
+					<h4 class="font-thin">Our mobile engineers have pushed iOS and Android games and are wizards at the craft. They'll take your dream straight to the App Store.</h4>
+				</div>
+				<div class="col-12 col-lg-3 col-sm-6">
+					<p><i class="icon icon-money"></i></p>
+					<h2 class="font-semibold">E-Commerce</h2>
+					<h4 class="font-thin">If you have an awesome product to sell, our branding experts and e-commerce development team will make sure it looks amazing to the masses.</h4>
+				</div>
+			</div>
 
-                        <!-- Social Media Implementation -->
-                        <ul class="list-inline intro-social-buttons">
-                            <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                            </li>
-                            <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
-                            </li>
-                            <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-                            </li>
-                        </ul>
+			<br><br><br>
 
+			<div class="container">
+                <div class="row centered">
+                    <br>
+                    <div class="col-lg-3 mt">
+                        <canvas id="javascript" height="130" width="130"></canvas>
+                        <p>Ruby/PHP</p>
+                        <br>
+                        <script>
+                            var doughnutData = [
+                                    {
+                                        value: 80,
+                                        color:"#e4e6e5"
+                                    },
+                                    {
+                                        value : 20,
+                                        color : "#6E6E6E"
+                                    }
+                                ];
+                                var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
+                        </script>
                     </div>
-                    <!-- intro-message -->
-                </div>
-                <!-- /.col-lg-12 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </div>
-    <!-- /.intro-header -->
+                    <div class="col-lg-3 mt">
+                        <canvas id="bootstrap" height="130" width="130"></canvas>
+                        <p>HTML/CSS</p>
+                        <br>
+                        <script>
+                            var doughnutData = [
+                                    {
+                                        value: 90,
+                                        color:"#e4e6e5"
+                                    },
+                                    {
+                                        value : 10,
+                                        color : "#6E6E6E"
+                                    }
+                                ];
+                                var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
+                        </script>
+                    </div>
+                    <div class="col-lg-3 mt">
+                        <canvas id="wordpress" height="130" width="130"></canvas>
+                        <p>WordPress</p>
+                        <br>
+                        <script>
+                            var doughnutData = [
+                                    {
+                                        value: 65,
+                                        color:"#e4e6e5"
+                                    },
+                                    {
+                                        value : 35,
+                                        color : "#6E6E6E"
+                                    }
+                                ];
+                                var myDoughnut = new Chart(document.getElementById("wordpress").getContext("2d")).Doughnut(doughnutData);
+                        </script>
+                    </div>
+                    <div class="col-lg-3 mt">
+                        <canvas id="photoshop" height="130" width="130"></canvas>
+                        <p>Photoshop</p>
+                        <br>
+                        <script>
+                            var doughnutData = [
+                                    {
+                                        value: 75,
+                                        color:"#e4e6e5"
+                                    },
+                                    {
+                                        value : 25,
+                                        color : "#6E6E6E"
+                                    }
+                                ];
+                                var myDoughnut = new Chart(document.getElementById("photoshop").getContext("2d")).Doughnut(doughnutData);
+                        </script>
+                    </div>
+                </div><!-- /row -->
+                <p>Our full-stack engineers are ready to take on any daunting task you have, regardless of what you need.</p>
+            </div><!-- /container -->
+            <br><br>
+		</div><!-- /container -->
+	</div><!-- /slide2 -->
+	
+	<!-- === SLide 3 - Portfolio -->
+	<div class="slide story" id="slide-3" data-slide="3">
+		<div class="row">
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p01-large.jpg"><img class="thumb" src="images/portfolio/p01-small.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p02-large.jpg"><img class="thumb" src="images/portfolio/p02-small.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p09-large.jpg"><img class="thumb" src="images/portfolio/p09-small.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p010-large.jpg"><img class="thumb" src="images/portfolio/p10-small.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p05-large.jpg"><img class="thumb" src="images/portfolio/p05-small.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p06-large.jpg"><img class="thumb" src="images/portfolio/p06-small.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p07-large.jpg"><img class="thumb" src="images/portfolio/p07-small.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p08-large.jpg"><img class="thumb" src="images/portfolio/p08-small.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p03-large.jpg"><img class="thumb" src="images/portfolio/p03-small.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p04-large.jpg"><img class="thumb" src="images/portfolio/p04-small.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p11-large.jpg"><img class="thumb" src="images/portfolio/p11-small.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p12-large.jpg"><img class="thumb" src="images/portfolio/p12-small.jpg" alt=""></a></div>
+		</div><!-- /row -->
+	</div><!-- /slide3 -->
+	
+	<!-- === Slide 4 - Process === -->
+	<div class="slide story" id="slide-4" data-slide="4">
+		<div class="container">
+			<div class="row title-row">
+				<div class="col-12 font-thin"><span class="font-semibold">Timeline</span></div>
+			</div><!-- /row -->
+			<div class="row line-row">
+				<div class="hr">&nbsp;</div>
+			</div><!-- /row -->
+			<div class="row subtitle-row">
+				<div class="col-sm-1 hidden-sm">&nbsp;</div>
+				<div class="col-12 col-sm-10 font-light">Our creation process consists of several steps in which you will continually have input on our development cycle. You can watch as your idea grows into something beautiful.</div>
+				<div class="col-sm-1 hidden-sm">&nbsp;</div>
+			</div><!-- /row -->
+			<div class="row content-row">
+				<div class="col-sm-1 hidden-sm">&nbsp;</div>
+				<div class="col-12 col-sm-2">
+					<p><i class="icon icon-microphone"></i></p>
+					<h2 class="font-semibold">Listening to Your Needs</h2>
+					<h4 class="font-thin">We want to build the applicaton <span class="font-semibold">your heart</span> desires. Our consultants and engineers will work with you to ensure your product comes out <span class="font-semibold">great</span>.</h4>
+				</div><!-- /col12 -->
+				<div class="col-12 col-sm-2">
+					<p><i class="icon icon-thumbs-up"></i></p>
+					<h2 class="font-semibold">Design and Planning</h2>
+					<h4 class="font-thin">After our initial talks, our design team will work with you to create masterfully designed prototypes. We want to make sure you get exactly what you want.</h4>
+				</div><!-- /col12 -->
+				<div class="col-12 col-sm-2">
+					<p><i class="icon icon-magic"></i></p>
+					<h2 class="font-semibold">Image and Branding</h2>
+					<h4 class="font-thin">Our branding experts know exactly how to catch the eyes of even the most perceptive folk. Our aesthetic will be clean, modern, and mass-marketable.</h4>
+				</div><!-- /col12 -->
+				<div class="col-12 col-sm-2">
+					<p><i class="icon icon-fire"></i></p>
+					<h2 class="font-semibold">Hacking It Together</h2>
+					<h4 class="font-thin">Here's where our developers do the dirty work. Our team consists of only the finest web and mobile engineers and will certainly build a great application.</h4>
+				</div><!-- /col12 -->
+				<div class="col-12 col-sm-2">
+					<p><i class="icon icon-rocket"></i></p>
+					<h2 class="font-semibold">Delivering the Product</h2>
+					<h4 class="font-thin">After the engineering process, we will rigorously stability test your application before deployment. We want to make sure it's ready to go big.</h4>
+				</div><!-- /col12 -->
+				<div class="col-sm-1 hidden-sm">&nbsp;</div>
+			</div><!-- /row -->
+		</div><!-- /container -->
+	</div><!-- /slide4 -->
+	
+	<!-- === Slide 5 === -->
+	<div class="slide story" id="slide-5" data-slide="5">
+		<div class="container">
+			<div class="row title-row">
+				<div class="col-12 font-thin"><span class="font-semibold">About Us</div>
+			</div><!-- /row -->
+			<div class="row line-row">
+				<div class="hr">&nbsp;</div>
+			</div><!-- /row -->
+			<div class="row subtitle-row">
+				<div class="col-sm-1 hidden-sm">&nbsp;</div>
+				<div class="col-12 col-sm-10 font-light">I guess we'll put our pics here?</div>
+				<div class="col-sm-1 hidden-sm">&nbsp;</div>
+			</div><!-- /row -->
 
-    <div class="content-section-a">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Why choose us?
-                        <br>We make beautiful apps.</h2>
-                    <p class="lead">CodePort is composed of a small team of talented engineers hand-picked from only the top ranked programs in the United States. You can't go wrong with our group.</p>
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/ipod.jpg" alt="">
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-a -->
-
-    <div class="content-section-b">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Need consulting?
-                        <br>No problem.</h2>
-                    <p class="lead">CodePort has both small and big businesses covered. We offer lead generation advising and expert industry advisory to ensure an explosive take-off for your ideas.</p>
-                </div>
-                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="img/doge.png" alt="">
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-b -->
-
-    <div class="content-section-a">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Have an idea ready to go?
-                        <br>Talk to us.</h2>
-                    <p class="lead">Fill out a form on our <a target="_blank" href="./contact.html">Contact Us page</a>. We'll be sure to get back to you with a gameplan in no time!</p>
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/phones.png" alt="">
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-a -->
-
-    <div class="banner">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-6">
-                    <h2>Connect to us on:</h2>
-                </div>
-                <div class="col-lg-6">
-                    <ul class="list-inline banner-social-buttons">
-                        <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                        </li>
-                        <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
-                        </li>
-                        <li><a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.banner -->
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="list-inline">
-                        <li><a href="./index.html">About Us</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li><a href="./services.html">Services</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                         <li><a href="./process.html">Our Process</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li><a href="./portfolio.html">Portfolio</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li><a href="./contact.html">Contact Us</a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-muted small">Copyright &copy; CodePort 2014. All Rights Reserved</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- JavaScript -->
-    <script src="js/jquery-1.10.2.js"></script>
-    <script src="js/bootstrap.js"></script>
-
+			<!-- <div class="row content-row">
+				<div class="col-1 col-sm-1 hidden-sm">&nbsp;</div>
+				<div class="col-12 col-sm-2"><img src="images/client01.png" alt=""></div>
+				<div class="col-12 col-sm-2"><img src="images/client02.png" alt=""></div>
+				<div class="col-12 col-sm-2"><img src="images/client03.png" alt=""></div>
+				<div class="col-12 col-sm-2"><img src="images/client04.png" alt=""></div>
+				<div class="col-12 col-sm-2"><img src="images/client05.png" alt=""></div>
+				<div class="col-1 col-sm-1 hidden-sm">&nbsp;</div>
+			</div> --><!-- /row -->
+		</div><!-- /container -->
+	</div><!-- /slide5 -->
+	
+	<!-- === Slide 6 / Contact === -->
+	<div class="slide story" id="slide-6" data-slide="6">
+		<div class="container">
+			<div class="row title-row">
+				<div class="col-12 font-light">Leave us a <span class="font-semibold">message</span></div>
+			</div><!-- /row -->
+			<div class="row line-row">
+				<div class="hr">&nbsp;</div>
+			</div><!-- /row -->
+			<div class="row subtitle-row">
+				<div class="col-sm-1 hidden-sm">&nbsp;</div>
+				<div class="col-12 col-sm-10 font-light">I'll add a contact form here.</div>
+				<div class="col-sm-1 hidden-sm">&nbsp;</div>
+			</div><!-- /row -->
+			<div id="contact-row-4" class="row">
+				<div class="col-sm-1 hidden-sm">&nbsp;</div>
+				<div class="col-12 col-sm-2 with-hover-text">
+					<p><a target="_blank" href="#"><i class="icon icon-phone"></i></a></p>
+					<span class="hover-text font-light ">phone number here</span></a>
+				</div><!-- /col12 -->
+				<div class="col-12 col-sm-2 with-hover-text">
+					<p><a target="_blank" href="#"><i class="icon icon-envelope"></i></a></p>
+					<span class="hover-text font-light ">info@codeport.net</span></a>
+				</div><!-- /col12 -->
+				<div class="col-12 col-sm-2 with-hover-text">
+					<p><a target="_blank" href="#"><i class="icon icon-home"></i></a></p>
+					<span class="hover-text font-light ">Our Address here</span></a>
+				</div><!-- /col12 -->
+				<div class="col-12 col-sm-2 with-hover-text">
+					<p><a target="_blank" href="#"><i class="icon icon-facebook"></i></a></p>
+					<span class="hover-text font-light ">fb link?</span></a>
+				</div><!-- /col12 -->
+				<div class="col-12 col-sm-2 with-hover-text">
+					<p><a target="_blank" href="#"><i class="icon icon-twitter"></i></a></p>
+					<span class="hover-text font-light ">@CodePort</span></a>
+				</div><!-- /col12 -->
+				<div class="col-sm-1 hidden-sm">&nbsp;</div>
+			</div><!-- /row -->
+		</div><!-- /container -->
+	</div><!-- /Slide 6 -->
+	
 </body>
+
+	<!-- SCRIPTS -->
+	<script src="js/html5shiv.js"></script>
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/jquery-migrate-1.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="fancybox/jquery.fancybox.pack-v=2.1.5.js"></script>
+	<script src="js/script.js"></script>
+	
+	<!-- fancybox init -->
+	<script>
+	$(document).ready(function(e) {
+		var lis = $('.nav > li');
+		menu_focus( lis[0], 1 );
+		
+		$(".fancybox").fancybox({
+			padding: 10,
+			helpers: {
+				overlay: {
+					locked: false
+				}
+			}
+		});
+	
+	});
+	</script>
 
 </html>
