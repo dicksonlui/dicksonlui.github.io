@@ -1,17 +1,17 @@
 
 .font-thin {
 	font-family: "Titillium Web", sans-serif;
-	font-weight: 200;
+	font-weight: 100;
 }
 
 .font-semibold {
 	font-family: "Titillium Web", sans-serif;
-	font-weight: 600;
+	font-weight: 500;
 }
 
 .font-light {
 	font-family: "Titillium Web", sans-serif;
-	font-weight: 300;
+	font-weight: 200;
 }
 
 html, body {
@@ -24,6 +24,7 @@ body {
 	font-family: "Titillium Web", sans-serif;
 	font-weight: normal;
 	overflow-x: hidden;
+	-webkit-text-stroke: 0.35px;
 	-webkit-font-smoothing: antialiased !important;
 }
 
